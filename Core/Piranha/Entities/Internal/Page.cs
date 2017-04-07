@@ -141,7 +141,7 @@ namespace Piranha.Models
 		/// </summary>
 		[Column(Name = "page_keywords")]
 		[Display(ResourceType = typeof(Piranha.Resources.Page), Name = "Keywords")]
-		[StringLength(255, ErrorMessageResourceType = typeof(Piranha.Resources.Page), ErrorMessageResourceName = "KeywordsLength")]
+		[StringLength(128, ErrorMessageResourceType = typeof(Piranha.Resources.Page), ErrorMessageResourceName = "KeywordsLength")]
 		public string Keywords { get; set; }
 
 		/// <summary>
